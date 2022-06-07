@@ -27,7 +27,7 @@ img {
   width: 200px;
   position: fixed;
   overflow-x: hidden;
-  padding-top: 180px;
+  padding-top: 140px;
   margin-left: 2%;
 }
 /* mouse-over */
@@ -83,6 +83,9 @@ main {
   .overskrift_vindue {
     flex-direction: column;
   }
+}
+article {
+  margin-bottom: 15px;
 }
 footer {
   background-color: rgb(211, 211, 211);
