@@ -34,10 +34,6 @@ img {
 .menu a:hover {
   color: #f1f1f1;
 }
-.active {
-  background-color: green;
-  color: white;
-}
 /* media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

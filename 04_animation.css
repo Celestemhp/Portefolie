@@ -6,8 +6,18 @@
     gap: 40px;
 }
 .container1 img {
-    width: 250px;
     border-radius: 8px;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    justify-items: center;
+    gap: 10px;
+}
+.container2 img {
+    border-radius: 8px;
+    width: 400px;
 }
 h2 {
     font-size: 1.2rem;
@@ -16,4 +26,7 @@ h2 {
 p {
   line-height: 2rem;
 }
-
+/* mouse-over */
+.spil_knap a:hover {
+    color: grey;
+}
