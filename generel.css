@@ -1,0 +1,95 @@
+/** @format */
+* {
+    all: unset;
+    display: revert;
+    cursor: revert;
+    box-sizing: border-box;
+  }
+body {
+  background-color: rgb(248, 174, 255); /* Hvis browseren ikke understøtter gradienten */
+  background-image: linear-gradient(to right, rgb(248, 174, 255) , rgb(189, 255, 132));
+  font-family: 'Courier New', Courier, monospace;
+}
+.top {
+  text-align: end;
+  font-size: 1.3rem;
+  background-color: rgb(234, 234, 234);
+  padding: 3px;
+  border-bottom: 2px solid rgb(94, 94, 94);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/******* menu ********/
+.menu {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  overflow-x: hidden;
+  padding-top: 180px;
+  margin-left: 2%;
+}
+/* mouse-over */
+.menu a:hover {
+  color: #f1f1f1;
+}
+.active {
+  background-color: green;
+  color: white;
+}
+/* media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.mappe p {
+  text-align: center;
+}
+.mappe {
+  position: relative;
+  width: 90px;
+  padding-bottom: 5px;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+.mappe svg {
+  position: absolute;
+}
+/****** main ******/
+main {
+  margin: 60px 20px 10px 150px;
+  background-color: white;
+  border-radius: 30px;
+  border-right: 3px solid rgb(131, 131, 131);
+}
+.overskrift_vindue {
+  background-color: rgb(211, 211, 211);
+  padding: 4px;
+  border-radius:25px 25px 0px 0px;
+  border-bottom: 3px solid rgb(131, 131, 131);
+  font-size: 1.3rem;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+.overskrift_vindue img {
+  position: absolute;
+  width: 2.5%;
+  right: 2%;
+}
+@media (max-width: 800px) {
+  .overskrift_vindue {
+    flex-direction: column;
+  }
+}
+footer {
+  background-color: rgb(211, 211, 211);
+  padding: 4px;
+  border-radius: 0px 0px 25px 25px;
+  border-top: 3px solid rgb(131, 131, 131);
+  border-bottom: 4px solid rgb(131, 131, 131);
+  font-size: 1.1rem;
+  text-align: center;
+}
