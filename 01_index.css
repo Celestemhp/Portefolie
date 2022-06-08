@@ -3,14 +3,15 @@ main {
     border-radius: 0px;
     border-right: 0px;
 }
-.container {
+.container_note {
     position: relative;
     left: 73%;
     top: 400px;
     width: 250px;
 }
-.container img {
+.container_note img {
     position: absolute;
+    /* aspect-ratio: 4.9/4.7; */
 }
 .info {
     padding: 19px;

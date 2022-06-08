@@ -80,8 +80,15 @@ main {
     flex-direction: column;
   }
 }
-article {
+section {
   margin-bottom: 15px;
+}
+h2 {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+p {
+line-height: 2rem;
 }
 footer {
   background-color: rgb(211, 211, 211);
