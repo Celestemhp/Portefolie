@@ -1,0 +1,86 @@
+/******** skrivebord ********/
+#main1 {
+    display: unset;
+    border-radius: 0px;
+    border-right: 0px;
+}
+.container_note {
+    position: sticky;
+    left: 73%;
+    top: 400px;
+    width: 250px;
+}
+.container_note img {
+    position: absolute;
+    /* aspect-ratio: 4.9/4.7; */
+}
+.info {
+    padding: 19px;
+    position: absolute;
+    line-height: 1.8rem;
+}
+/******** om  ********/
+.container_om {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    justify-items: center;
+    gap: 40px;
+}
+.container_om img {
+    width: 250px;
+    border-radius: 8px;
+}
+.container_om h2 {
+    text-decoration: underline;
+}
+.tekst_container {
+    grid-column: 2 / span 3;
+}
+.container2_om {
+    margin: 40px;
+}
+.media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.media_knap1 {
+    font-size: 1.2rem;
+    width: fit-content;
+    cursor: pointer;
+    background-color:rgb(250, 227, 253);
+    padding: 1px;
+}
+.media_knap2 {
+    font-size: 1.2rem;
+    width: fit-content;
+    cursor: pointer;
+    background-color: rgb(250, 227, 253);
+    padding: 1px;
+}
+
+/******** 02_web ********/
+
+
+/******** 03_ux ********/
+
+
+/******** 04_animation ********/
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    justify-items: center;
+    gap: 10px;
+}
+.container2 img {
+    border-radius: 8px;
+    width: 400px;
+}
+
+/* mouse-over */
+.spil_knap a:hover {
+    color: grey;
+}
+/******** 05_indhold ********/

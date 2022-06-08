@@ -23,12 +23,18 @@ img {
 }
 /******* menu ********/
 .menu {
-  height: 100%;
   width: 200px;
-  position: fixed;
   overflow-x: hidden;
   padding-top: 140px;
   margin-left: 2%;
+  position: absolute;
+}
+.menu a {
+  display: block;
+}
+
+.menu p.active {
+  text-decoration: underline;
 }
 /* mouse-over */
 .menu a:hover {
@@ -55,7 +61,7 @@ img {
 }
 /****** main ******/
 main {
-  margin: 60px 20px 10px 150px;
+  margin: 30px 20px 10px 150px;
   background-color: white;
   border-radius: 30px;
   border-right: 3px solid rgb(131, 131, 131);
@@ -98,4 +104,16 @@ footer {
   border-bottom: 4px solid rgb(131, 131, 131);
   font-size: 1.1rem;
   text-align: center;
+}
+
+/******* generel container *******/
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px;
+  justify-items: center;
+  gap: 40px;
+}
+.container1 img {
+  border-radius: 8px;
 }
