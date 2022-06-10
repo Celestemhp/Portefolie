@@ -1,119 +1,72 @@
-/** @format */
+/** @format **/
 * {
-    all: unset;
-    display: revert;
-    cursor: revert;
-    box-sizing: border-box;
-  }
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
 body {
-  background-color: rgb(248, 174, 255); /* Hvis browseren ikke understøtter gradienten */
-  background-image: linear-gradient(to right, rgb(248, 174, 255) , rgb(189, 255, 132));
-  font-family: 'Courier New', Courier, monospace;
+  /* width: 100%;
+  aspect-ratio: 16/9; */
+background-color: rgb(248, 174, 255); /* Hvis browseren ikke understøtter gradienten */
+background-image: linear-gradient(to right, rgb(248, 174, 255) , rgb(189, 255, 132));
+font-family: 'Courier New', Courier, monospace;
 }
 .top {
-  text-align: end;
-  font-size: 1.3rem;
-  background-color: rgb(234, 234, 234);
-  padding: 3px;
-  border-bottom: 2px solid rgb(94, 94, 94);
+text-align: end;
+font-size: 1.3rem;
+background-color: rgb(234, 234, 234);
+padding: 3px;
+border-bottom: 2px solid rgb(94, 94, 94);
 }
 img {
-  width: 100%;
-  height: auto;
-}
-/******* menu ********/
-.menu {
-  width: 200px;
-  overflow-x: hidden;
-  padding-top: 140px;
-  margin-left: 2%;
-  position: absolute;
-}
-.menu a {
-  display: block;
+width: 100%;
+height: auto;
 }
 
-.menu p.active {
-  text-decoration: underline;
-}
-/* mouse-over */
-.menu a:hover {
-  color: #f1f1f1;
-}
-/* media queries for responsiveness */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.mappe p {
-  text-align: center;
-}
-.mappe {
-  position: relative;
-  width: 90px;
-  padding-bottom: 5px;
-  -webkit-transition: 0.25s 0s ease-in-out;
-  transition: 0.25s 0s ease-in-out;
-}
-.mappe svg {
-  position: absolute;
-}
 /****** main ******/
 main {
-  margin: 30px 20px 10px 150px;
+display: flex;
+margin: 30px 20px 10px 15px;
+}
+.overskrift_vindue {
+background-color: rgb(211, 211, 211);
+padding: 4px;
+border-radius:25px 25px 0px 0px;
+border-bottom: 3px solid rgb(131, 131, 131);
+font-size: 1.3rem;
+display: flex;
+position: relative;
+justify-content: space-around;
+}
+.overskrift_vindue img {
+position: absolute;
+width: 2.5%;
+right: 2%;
+}
+.vindue {
+  margin-left: 33px;
   background-color: white;
   border-radius: 30px;
   border-right: 3px solid rgb(131, 131, 131);
 }
-.overskrift_vindue {
-  background-color: rgb(211, 211, 211);
-  padding: 4px;
-  border-radius:25px 25px 0px 0px;
-  border-bottom: 3px solid rgb(131, 131, 131);
-  font-size: 1.3rem;
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-}
-.overskrift_vindue img {
-  position: absolute;
-  width: 2.5%;
-  right: 2%;
-}
-@media (max-width: 800px) {
-  .overskrift_vindue {
-    flex-direction: column;
-  }
-}
 section {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 h2 {
-  font-size: 1.2rem;
-  line-height: 3rem;
+font-size: 1.2rem;
+line-height: 3rem;
 }
 p {
 line-height: 2rem;
 }
-footer {
-  background-color: rgb(211, 211, 211);
-  padding: 4px;
-  border-radius: 0px 0px 25px 25px;
-  border-top: 3px solid rgb(131, 131, 131);
-  border-bottom: 4px solid rgb(131, 131, 131);
-  font-size: 1.1rem;
-  text-align: center;
-}
 
-/******* generel container *******/
-.container1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px;
-  justify-items: center;
-  gap: 40px;
-}
-.container1 img {
-  border-radius: 8px;
+footer {
+background-color: rgb(211, 211, 211);
+padding: 4px;
+border-radius: 0px 0px 25px 25px;
+border-top: 3px solid rgb(131, 131, 131);
+border-bottom: 4px solid rgb(131, 131, 131);
+font-size: 1.1rem;
+text-align: center;
 }

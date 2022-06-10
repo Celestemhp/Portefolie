@@ -1,4 +1,4 @@
-/******** skrivebord ********/
+/*************************************** style *****************/
 #main1 {
     display: unset;
     border-radius: 0px;
@@ -19,6 +19,19 @@
     position: absolute;
     line-height: 1.8rem;
 }
+
+/******* generel container *******/
+.container1 {
+display: flex;
+flex-direction: column;
+margin: 40px;
+justify-items: center;
+
+}
+.container1 img {
+border-radius: 8px;
+}
+
 /******** om  ********/
 .container_om {
     display: grid;
@@ -59,28 +72,70 @@
     background-color: rgb(250, 227, 253);
     padding: 1px;
 }
-
-/******** 02_web ********/
-
-
-/******** 03_ux ********/
-
-
 /******** 04_animation ********/
-.container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 40px;
-    justify-items: center;
-    gap: 10px;
-}
-.container2 img {
-    border-radius: 8px;
-    width: 400px;
-}
 
 /* mouse-over */
 .spil_knap a:hover {
     color: grey;
 }
-/******** 05_indhold ********/
+
+/****** Media query *******/
+@media screen and (max-width: 1200px) {
+.luk_knap img {
+    width: 4%;
+}
+.container_om {
+    display: flex;
+    flex-direction: column;
+}
+.om_img {
+    align-self: center;
+}
+}
+  @media screen and (max-width: 800px) {
+main {   
+    flex-direction: column;
+    margin: -63px 5px 5px 10px;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.vindue {
+    margin-left: 0px;
+}
+.luk_knap img {
+    width: 5%;
+}
+.container_om {
+    display: flex;
+    flex-direction: column;
+}
+.om_img {
+    align-self: center;
+}
+}
+  @media screen and (max-width: 600px) {
+main {   
+    flex-direction: column;
+    margin: -63px 5px 5px 10px;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    margin-left: 10px;
+}
+.container_om {
+    display: flex;
+}
+.om_img {
+    align-self: center;
+}
+.container1 {
+display: flex;
+flex-direction: column;
+}
+}
