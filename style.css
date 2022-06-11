@@ -137,8 +137,8 @@ main {
     display: flex;
     justify-content: space-around;
 }
-.vindue {
-    margin-left: 0px;
+.baggrund_vindue {
+    margin: 30px;
 }
 .luk_knap img {
     width: 5%;
@@ -151,41 +151,11 @@ main {
     align-self: center;
 }
 }
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 main {   
     flex-direction: column;
     margin: -63px 5px 5px 10px;
 }
-.burgermenu {
-    position: fixed;
-  left: -40px;
-  top: -40px;
-  z-index: 1;
-  width: 130px;
-  height: 130px;
-  background-color: var(--blueknap);
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.burgermenu ul {
-    z-index: 2;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    opacity: 0;
-    -webkit-transition: 0.25s 0s ease-in-out;
-    transition: 0.25s 0s ease-in-out;
-  }
-.burgermenu a {
-    margin-bottom: 1em;
-    display: block;
-    font-family: var(--font);
-    color: #ffffff;
-    font-size: 1.2rem;
-  }
 section {
     margin-left: 10px;
 }
@@ -198,5 +168,8 @@ section {
 .container1 {
 display: flex;
 flex-direction: column;
+}
+.mappe p {
+    font-size: 0.9rem;
 }
 }

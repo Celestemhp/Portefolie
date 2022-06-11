@@ -190,6 +190,15 @@ section {
 .overskrift_vindue {
     position: unset;
 }
+.luk_knap img {
+    right: 7%;
+}
+.baggrund_vindue {
+    margin: 20px;
+    background-color: white;
+    border-radius: 30px;
+    border-right: 3px solid rgb(131, 131, 131);
+  }
 .container_om {
     display: flex;
 }
