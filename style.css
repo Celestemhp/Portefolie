@@ -56,32 +56,25 @@
     justify-items: center;
 }
 .container1 img {
-border-radius: 8px;
-}
-.container1 img {
+    border-radius: 8px;
     width: 70%;
+    align-self: center;
 }
-/******** om  ********/
-.container_om {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.container1_om {
+    display: flex;
+    flex-direction: column;
     margin: 40px;
     justify-items: center;
-    gap: 40px;
 }
-.container_om img {
-    width: 250px;
+.om_img {
+    align-self: center;
+}
+.om_img img {
     border-radius: 8px;
+    width: 70%;
+    max-width: 70%;
 }
-.container_om h2 {
-    text-decoration: underline;
-}
-.tekst_container {
-    grid-column: 2 / span 3;
-}
-.container2_om {
-    margin: 40px;
-}
+
 .media {
     display: flex;
     gap: 20px;
@@ -91,14 +84,14 @@ border-radius: 8px;
     font-size: 1.2rem;
     width: fit-content;
     cursor: pointer;
-    background-color:rgb(250, 227, 253);
+    background-color:var(--media_bg);
     padding: 1px;
 }
 .media_knap2 {
     font-size: 1.2rem;
     width: fit-content;
     cursor: pointer;
-    background-color: rgb(250, 227, 253);
+    background-color: var(--media_bg);
     padding: 1px;
 }
 /****** Media query *******/
@@ -110,7 +103,7 @@ border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;  
 }
-.container_om {
+.container1_om {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -122,15 +115,16 @@ border-radius: 8px;
 .luk_knap img {
     width: 4%;
 }
-.container_om {
+.container1_om {
     display: flex;
     flex-direction: column;
 }
-.om_img {
-    align-self: center;
+.om_img img {
+    width: 45%;
+    max-width: 50%;
 }
 }
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 main {   
     flex-direction: column;
     margin: -63px 5px 5px 10px;
@@ -138,6 +132,10 @@ main {
 .menu ul {
     display: flex;
     justify-content: space-around;
+    margin-top: 60px;
+}
+.mappe p {
+    font-size: 0.8rem;
 }
 .baggrund_vindue {
     margin: 30px;
@@ -145,12 +143,9 @@ main {
 .luk_knap img {
     width: 5%;
 }
-.container_om {
+.container1_om {
     display: flex;
     flex-direction: column;
-}
-.om_img {
-    align-self: center;
 }
 }
 @media screen and (max-width: 600px) {
@@ -158,20 +153,36 @@ main {
     flex-direction: column;
     margin: -63px 5px 5px 10px;
 }
+
 section {
     margin-left: 10px;
 }
-.container_om {
+.container1_om {
     display: flex;
 }
-.om_img {
-    align-self: center;
-}
+
 .container1 {
 display: flex;
 flex-direction: column;
 }
 .mappe p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+}
+@media screen and (max-width: 550px) {
+main {   
+    margin: -63px 5px 5px 10px;
+}
+.baggrund_vindue {
+    margin: 0px 0px 15px 0px;
+}
+.mappe {
+    width: 70px;
+}
+.section {
+    margin: 0px;
+}
+.container1 {
+    margin: 15px 7px 7px 15px;
 }
 }

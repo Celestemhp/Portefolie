@@ -7,26 +7,29 @@
 }
 /******** css-variabler *********/
 html {
---background-color: rgb(248, 174, 255);
---pinkknap: #fb95c3;
---hoverknapbg: #fffad3;
---activeknapbg: #aa0f56;
---activeknapshadow: #666;
+--bg-color: linear-gradient(to right, rgb(248, 174, 255) , rgb(189, 255, 132));
+--bg_color2: rgb(248, 174, 255);
+--top_border: solid rgb(94, 94, 94);
+--top_bg: rgb(234, 234, 234);
+--overskrift_vindue_bg: rgb(211, 211, 211);
+--vindue_bg: white;
+--border_bottom_bg: solid rgb(131, 131, 131);
+--media_bg: rgb(250, 227, 253);
 --font: "Courier New", Courier, monospace;
 }
 body {
   /* width: 100%;
   aspect-ratio: 16/9; */
-background-color: rgb(248, 174, 255); /* Hvis browseren ikke understøtter gradienten */
-background-image: linear-gradient(to right, rgb(248, 174, 255) , rgb(189, 255, 132));
-font-family: 'Courier New', Courier, monospace;
+background-color: var(--bg_color2); /* Hvis browseren ikke understøtter gradienten */
+background-image: var(--bg-color);
+font-family: var(--font);
 }
 .top {
 text-align: end;
 font-size: 1.3rem;
-background-color: rgb(234, 234, 234);
+background-color: var(--top_bg);
 padding: 3px;
-border-bottom: 2px solid rgb(94, 94, 94);
+border-bottom: var(--top_border);
 }
 .top_tekst {
   display: flex;
@@ -44,10 +47,10 @@ display: flex;
 margin: 30px 20px 10px 15px;
 }
 .overskrift_vindue {
-background-color: rgb(211, 211, 211);
+background-color: var(--overskrift_vindue_bg);
 padding: 4px;
 border-radius:25px 25px 0px 0px;
-border-bottom: 3px solid rgb(131, 131, 131);
+border-bottom: 3px var(--border_bottom_bg);
 font-size: 1.3rem;
 display: flex;
 position: relative;
@@ -61,7 +64,7 @@ right: 2%;
 
 .baggrund_vindue {
   margin-left: 33px;
-  background-color: white;
+  background-color: var(--vindue_bg);
   border-radius: 30px;
   border-right: 3px solid rgb(131, 131, 131);
 }
@@ -71,17 +74,18 @@ margin-bottom: 15px;
 h2 {
 font-size: 1.2rem;
 line-height: 3rem;
+text-decoration: underline;
 }
 p {
 line-height: 2rem;
 }
 
 footer {
-background-color: rgb(211, 211, 211);
+background-color: var(--overskrift_vindue_bg);
 padding: 4px;
 border-radius: 0px 0px 25px 25px;
-border-top: 3px solid rgb(131, 131, 131);
-border-bottom: 4px solid rgb(131, 131, 131);
+border-top: 3px var(--border_bottom_bg);
+border-bottom: 4px var(--border_bottom_bg);
 font-size: 1.1rem;
 text-align: center;
 }
@@ -95,4 +99,6 @@ gap: 40px;
 }
 .container1 img {
 border-radius: 8px;
+width: 70%;
+align-self: center;
 }
