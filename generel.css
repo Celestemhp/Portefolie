@@ -15,7 +15,7 @@ html {
 --vindue_bg: white;
 --border_bottom_bg: solid rgb(131, 131, 131);
 --media_bg: rgb(250, 227, 253);
---font: "Courier New", Courier, monospace;
+--font: sans-serif;
 }
 body {
   /* width: 100%;
@@ -89,16 +89,8 @@ border-bottom: 4px var(--border_bottom_bg);
 font-size: 1.1rem;
 text-align: center;
 }
-/******* generel container *******/
-.container1 {
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 40px;
-justify-items: center;
-gap: 40px;
-}
-.container1 img {
-border-radius: 8px;
-width: 70%;
-align-self: center;
+
+a {
+  text-decoration: underline;
+  color: blue;
 }
