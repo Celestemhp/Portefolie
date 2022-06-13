@@ -13,11 +13,11 @@
     padding: 19px;
     position: absolute;
     line-height: 1.8rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 /******* menu ********/
 .menu {
-    padding-top: 90px;
+    padding-top: 11px;
     flex: 20%;
     flex-direction: column;
 }
@@ -58,7 +58,9 @@
 .container1 img {
 border-radius: 8px;
 }
-
+.container1 img {
+    width: 70%;
+}
 /******** om  ********/
 .container_om {
     display: grid;

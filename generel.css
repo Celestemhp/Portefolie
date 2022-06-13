@@ -5,6 +5,15 @@
   cursor: revert;
   box-sizing: border-box;
 }
+/******** css-variabler *********/
+html {
+--background-color: rgb(248, 174, 255);
+--pinkknap: #fb95c3;
+--hoverknapbg: #fffad3;
+--activeknapbg: #aa0f56;
+--activeknapshadow: #666;
+--font: "Courier New", Courier, monospace;
+}
 body {
   /* width: 100%;
   aspect-ratio: 16/9; */
