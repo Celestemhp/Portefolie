@@ -15,7 +15,7 @@ html {
 --vindue_bg: white;
 --border_bottom_bg: solid rgb(131, 131, 131);
 --media_bg: rgb(250, 227, 253);
---font: sans-serif;
+--font: sans-serif, Arial;
 }
 body {
   /* width: 100%;
@@ -90,6 +90,9 @@ font-size: 1.1rem;
 text-align: center;
 }
 
+ul li {
+  list-style: none;
+}
 a {
   text-decoration: underline;
   color: blue;
