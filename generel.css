@@ -45,6 +45,7 @@ height: auto;
 main {
 display: flex;
 margin: 30px 20px 10px 15px;
+max-width: 1200px;
 }
 .overskrift_vindue {
 background-color: var(--overskrift_vindue_bg);

@@ -6,7 +6,6 @@ document.querySelector("body").addEventListener("mousedown", click);
 function click() {
     console.log("lyd");
     document.querySelector("#klikLyd").play();
-    document.querySelector("#klikLyd").volume = 1.5;
 }
 
 // document.querySelector("body").addEventListener("mousedown", click); {

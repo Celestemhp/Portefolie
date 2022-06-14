@@ -1,13 +1,13 @@
 /*************************************** style *****************/
 .container_note {
     position: fixed;
-    right: 5%;
-    top: 53%;
+    right: 14%;
+    top: 51%;
     width: 280px;
 }
 .container_note img {
     position: absolute;
-    /* aspect-ratio: 4.9/4.7; */
+    aspect-ratio: 4.9/4.7;
 }
 .info {
     padding: 19px;
