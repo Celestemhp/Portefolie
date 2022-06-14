@@ -7,41 +7,24 @@ function click() {
     console.log("lyd");
     document.querySelector("#klikLyd").play();
 }
+// darkmode
+function dark_mode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+ }
 
-// document.querySelector("body").addEventListener("mousedown", click); {
-//     if (click.pressure == 0) {
-//       // No pressure
-//       process_no_pressure(click);
-//     } else if (click.pressure == 1) {
-//       // Maximum pressure
-//       process_max_pressure(click);
-//     } else {
-//       // Default
-//       process_pressure(click);
-//     }
-//   }
+const btn = document.querySelector(".toggle-btn");
+const menu = document.querySelector(".main-menu");
 
-
-// // Dropdown
-// // klik variabel
-// const visNav = document.querySelector("#visNav");
-
-// // When the user clicks on the button - toggle between hiding and hideing//
-// function visMenuBtn() {
-// document.getElementById("#visNav").classList.toggle("hide");
-// }
-
-// function visMenuBtn() {
-// if (typeof menu.style.display === "menu") {
-//     menu.style.display = "menu";
-// } 
-// else {
-//     menu.style.display = "hide";
-// }
-// }
-
-// const button = document.querySelector('button');
-
-// button.addEventListener('click', event => {
-//   button.textContent = `Click count: ${event.detail}`;
-// });
+function toggleMenu() {
+  menu.classList.toggle("shown");
+  const menuShown = menu.classList.contains("shown");
+  if (menuShown) {
+    console.log(menuShown); 
+    btn.img = "Luk";
+  } else {
+    console.log(menuShown);
+    btn.img = "Menu";
+  }
+}
+btn.addEventListener("click", toggleMenu);

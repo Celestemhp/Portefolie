@@ -9,87 +9,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="top"> 
-            <p>@Celestes portefolio</p>
-        </div>
-    </header>
+     <header class="banner">
+            <div class="logo">
+                 <p>@Celestes portefolio</p>
+               </div>
+               <button type="button" class="dark-mode" >
+                <img src="svg/typcn-adjust-contrast.svg" onclick="dark_mode()" alt="darkmode"></button>
+                <button type="button" class="toggle-btn">
+                <img src="svg/mappe_blaa.svg" alt="mappe_blaa"></button>
+                <nav class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="om.html">
+                                <img src="svg/mappe_roed.svg" alt="mappe_roed">
+                                <p>Om_Celeste</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="02_web2.html">
+                                <img src="svg/mappe_blaa.svg" alt="mappe_blaa">
+                                <p>02_web</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="03_ux.html">
+                                <img src="svg/mappe_lyseroed.svg" alt="mappe_lyseroed">
+                                <p>03_ux</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="04_animation.html">
+                                <img src="svg/mappe_orange.svg" alt="mappe_orange">
+                                <p class="active">04_animation</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="05_indhold.html">
+                                <img src="svg/mappe_gul.svg" alt="mappe_gul">
+                                <p>05_indhold</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="06_portefolio.html">
+                                <img src="svg/mappe_groen.svg" class="active" alt="mappe_groen">
+                                <p>Portefolio</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
     <main>
-        <div class="menu">
-            <ul>
-                <li class="mappe">
-                    <a href="om.html">
-                        <img src="svg/mappe_roed.svg" alt="mappe_roed">
-                        <p>Om_Celeste</p>
-                    </a>
-                </li>
-                <li class="mappe">
-                    <a href="02_web2.html">
-                        <img src="svg/mappe_blaa.svg" alt="mappe_blaa">
-                        <p>02_web</p>
-                    </a>
-                </li>
-                <li class="mappe">
-                    <a href="03_ux.html">
-                        <img src="svg/mappe_lyseroed.svg" alt="mappe_lyseroed">
-                        <p>03_ux</p>
-                    </a>
-                </li>
-                <li class="mappe">
-                    <a href="04_animation.html">
-                        <img src="svg/mappe_orange.svg" alt="mappe_orange">
-                        <p class="active">04_animation</p>
-                    </a>
-                </li>
-                <li class="mappe">
-                    <a id="mappe_zoom" href="05_indhold.html">
-                        <img src="svg/mappe_gul.svg" alt="mappe_gul">
-                        <p>05_indhold</p>
-                    </a>
-                </li>
-                <li class="mappe">
-                    <a href="06_portefolio.html">
-                        <img src="svg/mappe_groen.svg" alt="mappe_groen">
-                        <p>Portefolio</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
     <div class="baggrund_vindue">
         <div class="overskrift_vindue">
             <div></div>
-            <p>Portefolio</p>
+            <h3>Portefolio</h3>
             <div class="luk_knap">
                 <a href="01_index.html">
                 <img src="svg/luk_knap.svg" alt="luk_knap">
                 </a>
             </div>
         </div>
-        <div>
      <section>
         <div class="container1">
            <img src="img/05_img/redesign_site.webp" alt="redesign"> 
-           <div>
-           <h2>Design af portefolio</h2>
+           <div class="tekst_container">
+            <h2>Design af portefolio</h2>
            <p>Til sidst skulle vi designe vores portefolie med al indholdet fra 1. semester. 
                Designet her skulle være responsivt, brugervenligt samt appelere til lærerne på KEA.
             </p>
         </div>
-        <div>
+        <div class="tekst_container2">
             <p>
                 Jeg startede med ideudvikling og research. Jeg tog meget udgangspunkt i, at lærerne var målgruppen.
                 Derfor reflekterede jeg over hvad der ville være brugervenligt for deres målgruppe.
-                Jeg lavede derefter moodboard og styletile.
+                Jeg lavede derefter moodboard og styletile. Læs mit procesdokument
+                <a href="Procesdokument.pages" download target="_blank" >her</a>.
             </p>
         </div>
         </div>
-    </section>
-    <footer>            
-        <p>@Celeste</p>
-    </footer>
-</div>
-</div>
-</main>
+        </section>
+        <footer>            
+            <p>@Celeste</p>
+        </footer>
+    </div>
+    </main>
 <div id="sound">
     <audio src="kliklyd.mp4" id="klikLyd"></audio>
 </div>

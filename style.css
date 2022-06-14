@@ -1,9 +1,39 @@
-/*************************************** style *****************/
+/******************* darkmode *****************/
+.dark-mode {
+    cursor: pointer;
+    width: 40px;
+    max-width: 40px;
+    border-radius: 10px;
+    transition: 0.5s 0s ease-in-out;
+    z-index: 1;
+}
+.dark .dark-mode {
+    filter: invert(100%);
+}
+.dark header{
+    background-color: green;
+}
+.dark {
+    color: #e6e6e6;
+}
+.dark footer, h3, .mappe p, .info {
+    color: black;
+}
+
+.dark a {
+    color: rgb(209, 199, 0);
+  }
+.dark body {
+    background-color: black; 
+    background-image: none;
+    filter: invert(100%);
+}
+/******************* style *****************/
 .container_note {
     position: fixed;
     right: 14%;
     top: 51%;
-    width: 280px;
+    width: 250px;
 }
 .container_note img {
     position: absolute;
@@ -14,62 +44,80 @@
     position: absolute;
     line-height: 1.8rem;
     font-size: 1.1rem;
+    max-width: 60ch;
 }
 /******* menu ********/
-.menu {
-    padding-top: 11px;
-    flex: 20%;
-    flex-direction: column;
-}
-ul a {
-    text-decoration: none;
-    color: unset;
-}
-.menu p.active {
-    text-decoration: underline;
-}
 /* mouse-over */
-.menu a:hover {
+.toggle-btn a:hover {
     color: #f1f1f1;
 }
-.mappe p {
-    text-align: center;
+.main-menu a:hover {
+    color: #f1f1f1;
 }
-.mappe {
-    width: 90px;
-    padding-bottom: 5px;
-    transition: 0.5s 0s ease-in-out;
+button .toggle-btn {
+    width: 30px;
 }
-#mappe_zoom {
-    animation-name: mappe_kf;
-    animation-duration: 0.3s;
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  gap: 20px;
 }
-@keyframes mappe_kf {
-0% {
-    transform: scale(90%);
+nav li {
+  width: 73px;
+  padding-bottom: 5px;
+  transition: 0.5s 0s ease-in-out;
+  font-size: 1rem;
 }
-100% {
-    transform: scale(100%);
+
+/* burgermenu */
+.toggle-btn {
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none; 
 }
+@media (max-width: 800px) {
+  .toggle-btn {
+    display: block; 
+  }
+  .main-menu {
+    display: contents;
+  }
+  .main-menu ul {
+    display: none;
+  }
+  .main-menu.shown ul {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: wrap;
+    z-index: 1; 
+  }
 }
+
 /******* generel container *******/
 .container1 {
     display: flex;
     flex-direction: column;
     margin: 40px;
     justify-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 .container1 img {
     border-radius: 8px;
-    width: 70%;
+    width: 63%;
     align-self: center;
 }
-.container1_om {
-    display: flex;
-    flex-direction: column;
+.tekst_container {
     margin: 40px;
-    justify-items: center;
+}
+.tekst_container2 {
+    margin: 40px;
 }
 .om_img {
     align-self: center;
@@ -97,7 +145,7 @@ ul a {
 }
 .container1_om {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 .container2_om {
     padding-left: 9%;
@@ -126,19 +174,18 @@ main {
     justify-content: space-around;
     margin-top: 60px;
 }
-.mappe p {
-    font-size: 0.8rem;
-}
+
 .baggrund_vindue {
     margin: 30px;
 }
 .luk_knap img {
-    width: 5%;
+    width: 30px;
 }
 .container1_om {
     display: flex;
     flex-direction: column;
 }
+
 }
 @media screen and (max-width: 600px) {
 main {   
@@ -157,9 +204,7 @@ section {
 display: flex;
 flex-direction: column;
 }
-.mappe p {
-    font-size: 0.8rem;
-}
+
 }
 @media screen and (max-width: 550px) {
 main {   
@@ -168,13 +213,17 @@ main {
 .baggrund_vindue {
     margin: 0px 0px 15px 0px;
 }
-.mappe {
-    width: 70px;
-}
+
 .section {
     margin: 0px;
 }
 .container1 {
     margin: 15px 7px 7px 15px;
+}
+
+}
+@media screen and (max-width: 400px) {
+.luk_knap img {
+    min-width: 20px;
 }
 }

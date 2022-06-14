@@ -15,7 +15,8 @@ html {
 --vindue_bg: white;
 --border_bottom_bg: solid rgb(131, 131, 131);
 --media_bg: rgb(250, 227, 253);
---font: sans-serif, Arial;
+--bg_dark: #222;
+font-family: 'Times New Roman', Times, serif;
 }
 body {
   /* width: 100%;
@@ -24,18 +25,20 @@ background-color: var(--bg_color2); /* Hvis browseren ikke understøtter gradien
 background-image: var(--bg-color);
 font-family: var(--font);
 }
-.top {
-text-align: end;
-font-size: 1.3rem;
-background-color: var(--top_bg);
-padding: 3px;
-border-bottom: var(--top_border);
-}
-.top_tekst {
+
+/* header */
+.banner {
+  padding: 3px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 1%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  background-color: var(--top_bg);
+  border-bottom: var(--top_border);
 }
+
 img {
 width: 100%;
 height: auto;
@@ -43,8 +46,7 @@ height: auto;
 
 /****** main ******/
 main {
-display: flex;
-margin: 30px 20px 10px 15px;
+margin: 20px;
 max-width: 1200px;
 }
 .overskrift_vindue {
@@ -64,7 +66,6 @@ right: 2%;
 }
 
 .baggrund_vindue {
-  margin-left: 33px;
   background-color: var(--vindue_bg);
   border-radius: 30px;
   border-right: 3px solid rgb(131, 131, 131);

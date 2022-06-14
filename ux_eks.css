@@ -19,39 +19,6 @@
     position: absolute;
     line-height: 1.8rem;
 }
-/******* menu ********/
-.menu {
-    padding-top: 90px;
-    flex: 20%;
-    flex-direction: column;
-}
-.menu p.active {
-    text-decoration: underline;
-}
-/* mouse-over */
-.menu a:hover {
-    color: #f1f1f1;
-}
-.mappe p {
-    text-align: center;
-}
-.mappe {
-    width: 90px;
-    padding-bottom: 5px;
-    transition: 0.5s 0s ease-in-out;
-}
-#mappe_zoom {
-    animation-name: mappe_kf;
-    animation-duration: 0.3s;
-}
-@keyframes mappe_kf {
-0% {
-    transform: scale(90%);
-}
-100% {
-    transform: scale(100%);
-}
-}
 /******* generel container *******/
 .container1 {
     display: flex;
@@ -103,12 +70,6 @@ border-radius: 8px;
     background-color: rgb(250, 227, 253);
     padding: 1px;
 }
-/******** 04_animation ********/
-
-/* mouse-over */
-.spil_knap a:hover {
-    color: grey;
-}
 
 /****** Media query *******/
 @media screen and (max-width: 1200px) {
@@ -128,7 +89,7 @@ main {
     flex-direction: column;
     margin: -63px 5px 5px 10px;
 }
-.menu ul {
+.menu_mobile ul {
     display: flex;
     justify-content: space-around;
 }
@@ -146,40 +107,7 @@ main {
     align-self: center;
 }
 }
-@media screen and (max-width: 600px) {
-.top {
-    padding: unset;
-    display: flex;
-    justify-content: space-between;
-}
 
-.top p {
-    word-wrap: break-word;
-}
-.icon {
-width: 100px;
-transition: 0.1s ease-in-out;
-cursor: pointer;
-margin: 6px;
-}
-.topnav a {
-    display: flex;
-  }
-.topnav a:hover {
-opacity: 60%;
-}
-
-.menu {
-    display: flex;
-    flex-flow: wrap;
-    padding: 4px;
-    gap: 31px;
-    background-color: rgb(234, 234, 234);
-    border-bottom: 2px solid rgb(94, 94, 94);
-}
-.hide {
-    display: none;
-}
 main {   
     flex-direction: column;
     margin: 21px 2px 20px 2px;
@@ -210,4 +138,60 @@ display: flex;
 flex-direction: column;
 margin: 2%;
 }
+
+
+
+
+/******* menu ********/
+
+/* mouse-over */
+.toggle-btn a:hover {
+    color: #f1f1f1;
+}
+.main-menu a:hover {
+    color: #f1f1f1;
+}
+button .toggle-btn {
+    width: 30px;
+}
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+nav li {
+    width: 73px;
+  padding-bottom: 5px;
+  transition: 0.5s 0s ease-in-out;
+  font-size: 1rem;
+}
+
+/* burgermenu */
+.toggle-btn {
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none; 
+}
+@media (max-width: 800px) {
+  .toggle-btn {
+    display: block; 
+  }
+  .main-menu {
+    display: contents;
+  }
+  .main-menu ul {
+    display: none; 
+  }
+  .main-menu.shown ul {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: wrap;
+  }
 }
