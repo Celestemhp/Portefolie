@@ -61,12 +61,12 @@ nav li {
     width: 73px;
     padding-bottom: 5px;
     transition: 0.5s 0s ease-in-out;
-    font-size: 1rem;
     list-style: none;
 }
 li a {
     text-decoration: none;
     color: #000;
+    font-size: 1rem;
 }
 @media (max-width: 900px) {
   .toggle-btn {
@@ -108,17 +108,73 @@ li a {
     font-size: 1.1rem;
     max-width: 60ch;
 }
-/* .forside body {
-    width: 1200px;
-    background-color: var(--bg-color);
-    animation: skift 5s infinite;
+
+/******* temaer *******/
+
+/******** om *******/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin: 19px 15px 42px 15px;
+}
+.om_mig {
+    max-width: 400px;
+    align-self: center;
+}
+.om_p {
+    max-width: 800px;
+}
+@media screen and (max-width: 730px) {
+.container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/********* web *******/
+.img_02 {
+    max-width: 500px;
+    align-self: center;
+}
+/********** ux *******/
+.container03 {
+    margin: 19px 15px 42px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.tekst_con03_1 {
+    max-width: 800px;
+}
+.img_con_03 {
+    max-width: 300px;
+    align-self: center;
 }
 
-@keyframes skift {
-  from {background-color: var(--bg-color);}
-  to {background-color: var(--bg_color2);}
-} */
-/******* temaer *******/
+@media screen and (max-width: 850px) {
+.container03 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+/********** animation *******/
+.img_04 {
+    min-width: 300px;
+    align-self: center;
+}
+/******* indhold *****/
+.img_05 {
+    max-width: 500px;
+    align-self: center;
+}
+/********* portefolio ******/
 .container1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -129,34 +185,13 @@ li a {
 }
 .tekst_container1 {
     grid-column: 2 / span 3;
+    max-width: 800px;
 }
 .tekst_container2 {
     grid-column: 1 / span 2;
     margin-top: 10px;
+    max-width: 800px;
 }
-
-.media {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-/********** ux *******/
-.container03 {
-    margin: 19px 15px 42px 15px;
-}
-
-.billede_ux_container {
-    width: 300px;
-    max-width: 300px;
-    float: right;
-    margin-left:15px;
-}
-
-
-
-
-
 /****** Media query *******/
 @media screen and (min-width: 1100px) {
 .luk_knap img {
@@ -172,17 +207,16 @@ li a {
 .luk_knap img {
     width: 3%;
 }
-
-.om_img img {
-    width: 45%;
-    max-width: 50%;
-}
 }
 
 @media screen and (max-width: 900px) {
 .baggrund_vindue {   
     flex-direction: column;
 }
+.container1 {
+    display: flex;
+    flex-direction: column;
+    }
 .menu ul {
     display: flex;
     justify-content: space-around;
