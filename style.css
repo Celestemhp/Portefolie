@@ -10,77 +10,65 @@
 .dark .dark-mode {
     filter: invert(100%);
 }
-.dark header{
-    background-color: green;
+.dark .baggrund_vindue {
+    background-color: rgb(57, 57, 57);
 }
-.dark {
+.dark .banner {
+    background-color: rgb(57, 57, 57);
+}
+.dark p {
     color: #e6e6e6;
 }
-.dark footer, h3, .mappe p, .info {
+.dark h2 {
+    color: #e6e6e6;
+}
+.dark footer p {
+    color: #000000;
+}
+.dark .info p {
     color: black;
 }
-
 .dark a {
     color: rgb(209, 199, 0);
-  }
+}
 .dark body {
     background-color: black; 
     background-image: none;
     filter: invert(100%);
 }
-/******************* style *****************/
-.container_note {
-    position: fixed;
-    right: 14%;
-    top: 51%;
-    width: 250px;
-}
-.container_note img {
-    position: absolute;
-    aspect-ratio: 4.9/4.7;
-}
-.info {
-    padding: 19px;
-    position: absolute;
-    line-height: 1.8rem;
-    font-size: 1.1rem;
-    max-width: 60ch;
-}
-/******* menu ********/
-/* mouse-over */
-.toggle-btn a:hover {
-    color: #f1f1f1;
-}
-.main-menu a:hover {
-    color: #f1f1f1;
-}
-button .toggle-btn {
-    width: 30px;
-}
-.main-menu ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  gap: 20px;
-}
-nav li {
-  width: 73px;
-  padding-bottom: 5px;
-  transition: 0.5s 0s ease-in-out;
-  font-size: 1rem;
-}
 
-/* burgermenu */
+/******************** menu *******************/
 .toggle-btn {
   border: none;
   min-width: 44px;
   min-height: 44px;
-  font-size: 1.1rem;
   cursor: pointer;
   display: none; 
 }
-@media (max-width: 800px) {
+button .toggle-btn {
+    width: 30px;
+}
+.toggle-btn a:hover {
+    color: #f1f1f1;
+}
+.main-menu ul {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+nav li {
+    width: 73px;
+    padding-bottom: 5px;
+    transition: 0.5s 0s ease-in-out;
+    font-size: 1rem;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #000;
+}
+@media (max-width: 900px) {
   .toggle-btn {
     display: block; 
   }
@@ -99,33 +87,52 @@ nav li {
     z-index: 1; 
   }
 }
+/******************* style *****************/
 
-/******* generel container *******/
+/******* forside *******/
+
+.container_note {
+    position: fixed;
+    right: 14%;
+    top: 51%;
+    width: 250px;
+}
+.container_note img {
+    position: absolute;
+    aspect-ratio: 4.9/4.7;
+}
+.info {
+    padding: 19px;
+    position: absolute;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    max-width: 60ch;
+}
+/* .forside body {
+    width: 1200px;
+    background-color: var(--bg-color);
+    animation: skift 5s infinite;
+}
+
+@keyframes skift {
+  from {background-color: var(--bg-color);}
+  to {background-color: var(--bg_color2);}
+} */
+/******* temaer *******/
 .container1 {
-    display: flex;
-    flex-direction: column;
-    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    margin: 19px 15px 15px 15px;
     justify-items: center;
     gap: 10px;
 }
-.container1 img {
-    border-radius: 8px;
-    width: 63%;
-    align-self: center;
-}
-.tekst_container {
-    margin: 40px;
+.tekst_container1 {
+    grid-column: 2 / span 3;
 }
 .tekst_container2 {
-    margin: 40px;
-}
-.om_img {
-    align-self: center;
-}
-.om_img img {
-    border-radius: 8px;
-    width: 70%;
-    max-width: 70%;
+    grid-column: 1 / span 2;
+    margin-top: 10px;
 }
 
 .media {
@@ -134,6 +141,22 @@ nav li {
     justify-content: center;
 }
 
+/********** ux *******/
+.container03 {
+    margin: 19px 15px 42px 15px;
+}
+
+.billede_ux_container {
+    width: 300px;
+    max-width: 300px;
+    float: right;
+    margin-left:15px;
+}
+
+
+
+
+
 /****** Media query *******/
 @media screen and (min-width: 1100px) {
 .luk_knap img {
@@ -141,87 +164,63 @@ nav li {
 }
 .container1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;  
-}
-.container1_om {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.container2_om {
-    padding-left: 9%;
+    grid-template-columns: 1fr 1fr 1fr;  
 }
 }
+
 @media screen and (max-width: 1100px) {
 .luk_knap img {
-    width: 4%;
+    width: 3%;
 }
-.container1_om {
-    display: flex;
-    flex-direction: column;
-}
+
 .om_img img {
     width: 45%;
     max-width: 50%;
 }
 }
-@media screen and (max-width: 800px) {
-main {   
+
+@media screen and (max-width: 900px) {
+.baggrund_vindue {   
     flex-direction: column;
-    margin: -63px 5px 5px 10px;
 }
 .menu ul {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
 }
-
-.baggrund_vindue {
-    margin: 30px;
-}
 .luk_knap img {
     width: 30px;
 }
-.container1_om {
-    display: flex;
-    flex-direction: column;
 }
 
-}
 @media screen and (max-width: 600px) {
-main {   
+.baggrund_vindue {   
     flex-direction: column;
-    margin: -63px 5px 5px 10px;
 }
-
 section {
     margin-left: 10px;
 }
-.container1_om {
-    display: flex;
-}
-
 .container1 {
 display: flex;
 flex-direction: column;
 }
-
 }
+
 @media screen and (max-width: 550px) {
-main {   
-    margin: -63px 5px 5px 10px;
-}
 .baggrund_vindue {
-    margin: 0px 0px 15px 0px;
-}
-
-.section {
-    margin: 0px;
+    margin: 10px 5px 5px 10px;
 }
 .container1 {
-    margin: 15px 7px 7px 15px;
+    margin: 15px 5px 5px 5px;
+}
+.tekst_container1 {
+    margin: 5px;
+}
+.tekst_container2 {
+    margin: 5px;
+}
 }
 
-}
 @media screen and (max-width: 400px) {
 .luk_knap img {
     min-width: 20px;

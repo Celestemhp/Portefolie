@@ -18,12 +18,19 @@ html {
 --bg_dark: #222;
 font-family: 'Times New Roman', Times, serif;
 }
+
 body {
-  /* width: 100%;
-  aspect-ratio: 16/9; */
-background-color: var(--bg_color2); /* Hvis browseren ikke understøtter gradienten */
-background-image: var(--bg-color);
-font-family: var(--font);
+ /* aspect-ratio: 16/9; */
+  background-color: var(--bg_color2); /* Hvis browseren ikke understøtter gradienten */
+  background-image: var(--bg-color);
+  font-family: var(--font);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  align-self: center;
 }
 
 /* header */
@@ -39,61 +46,49 @@ font-family: var(--font);
   border-bottom: var(--top_border);
 }
 
-img {
-width: 100%;
-height: auto;
-}
-
 /****** main ******/
-main {
-margin: 20px;
-max-width: 1200px;
-}
 .overskrift_vindue {
-background-color: var(--overskrift_vindue_bg);
-padding: 4px;
-border-radius:25px 25px 0px 0px;
-border-bottom: 3px var(--border_bottom_bg);
-font-size: 1.3rem;
-display: flex;
-position: relative;
-justify-content: space-around;
+  background-color: var(--overskrift_vindue_bg);
+  padding: 4px;
+  border-radius:25px 25px 0px 0px;
+  border-bottom: 3px var(--border_bottom_bg);
+  font-size: 1.3rem;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
 }
 .overskrift_vindue img {
-position: absolute;
-width: 2.5%;
-right: 2%;
+  position: absolute;
+  width: 2.5%;
+  right: 2%;
 }
-
 .baggrund_vindue {
   background-color: var(--vindue_bg);
   border-radius: 30px;
-  border-right: 3px solid rgb(131, 131, 131);
+  max-width: 1200px;
+  border-right: 3px var(--border_bottom_bg);
+  margin: 20px;
 }
 section {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 h2 {
-font-size: 1.2rem;
-line-height: 3rem;
-text-decoration: underline;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  text-decoration: underline;
+  color: black;
 }
 p {
-line-height: 2rem;
+  line-height: 1.6rem;
 }
-
 footer {
-background-color: var(--overskrift_vindue_bg);
-padding: 4px;
-border-radius: 0px 0px 25px 25px;
-border-top: 3px var(--border_bottom_bg);
-border-bottom: 4px var(--border_bottom_bg);
-font-size: 1.1rem;
-text-align: center;
-}
-
-ul li {
-  list-style: none;
+  background-color: var(--overskrift_vindue_bg);
+  padding: 4px;
+  border-radius: 0px 0px 25px 25px;
+  border-top: 3px var(--border_bottom_bg);
+  border-bottom: 4px var(--border_bottom_bg);
+  font-size: 1.1rem;
+  text-align: center;
 }
 a {
   text-decoration: underline;
